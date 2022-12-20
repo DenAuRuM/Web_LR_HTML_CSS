@@ -1,0 +1,261 @@
+.menu-link {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+div.items div {
+  display: none
+}
+
+div.items div:target {
+  display: block
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.produc-list {
+  padding: 2px 16px;
+}
+
+
+.window__text {}
+
+.window {
+  width: 500px;
+  text-align: center;
+  padding: 15px;
+  border: 3px solid blue;
+  background-color: white;
+  border-radius: 10px;
+  color: #0000cc;
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-40%, -30%);
+}
+
+.window__close {
+  display: inline-block;
+  border: 1px solid #0000cc;
+  color: #0000cc;
+  padding: 0 10px;
+  margin: 10px;
+  text-decoration: none;
+  background: #f2f2f2;
+  font-size: 13px;
+  cursor: pointer;
+
+}
+
+
+.btn {
+  color: blue;
+  font-size: 14px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  float: right;
+}
+
+.btn:active {
+  color: red;
+}
+
+.field:invalid,
+.pass:invalid,
+.birthday:invalid,
+.phone:invalid {
+  border: 1px solid red;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input:first-child {
+  margin-left: 9px;
+}
+
+/*.inf {
+  display: none;
+}
+
+.feed {
+  display: none;
+}
+*/
+
+.tabs {
+  font-size: 0;
+}
+
+.tabs>input[type="radio"] {
+  display: none;
+}
+
+.tabs>div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  border: 1px solid #e0e0e0;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: block;
+}
+
+.tabs>label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  padding: 2px 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+}
+
+.tabs>label:not(:first-of-type) {
+  border-left: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+
+.rewiewText img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item .avatar {
+  align-self: center;
+  grid-row: span 3;
+  justify-self: center;
+}
+
+.container {
+  display:flex;
+  align-items: flex-start;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.feedback textarea {
+  width: 600px;
+  height: 150px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+
+.send_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 25%;
+}
+
+.feedback button {
+  display: block;
+  border: none;
+  width: 90%;
+  display: block;
+  background: #7be382;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.foto img{
+  width: 150px;
+  border-radius: 25px;
+}
+
+.foto{
+  display: flex;
+  justify-content: center;
+}
+
+.text-center
+{
+  text-align: center;
+}
+
+.static-form input
+{
+  width: 70%;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.static-form 
+{
+  float: left;
+}
+
+
